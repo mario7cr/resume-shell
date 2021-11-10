@@ -1,0 +1,29 @@
+@import "variables";
+
+:host {
+  background-color: $var-bg-light-o1;
+  box-shadow: 0px 5px 15px -5px rgba(#1b1b1b, 0.5);
+
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  .avatar__wrapper--rounded {
+    border-radius: 50%;
+
+    .avatar__img--rounded {
+      width: 2.75rem;
+      height: 2.75rem;
+      margin: 0 auto;
+
+      border: 0.15rem solid rgba($color: #efefef, $alpha: 0.25);
+      border-radius: 50%;
+
+      background: #424242 url("../../../../assets/img/profile.webp")
+        no-repeat center center;
+      background-size: cover;
+    }
+  }
+}

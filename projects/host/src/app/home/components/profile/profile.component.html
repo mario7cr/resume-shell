@@ -1,0 +1,178 @@
+<!-- contact-information -->
+<mat-card class="contact-information__container mat-elevation-z0">
+  <mat-card-content fxLayout="row" fxLayoutAlign="start center">
+    <div fxLayout="column" fxLayoutAlign="stretch start">
+      <span class="candidate-name">{{ candidate.name }}</span>
+      <span class="candidate-role">{{ candidate.role }}</span>
+    </div>
+    <span class="spacer"></span>
+    <ul class="candidate-contact info-tag--dark">
+      <li class="candidate-contact__email">
+        <a [href]="'mailto:' + candidate.email">{{ candidate.email }}</a>
+        <a
+          role="button"
+          [rsmCopyToClipboard]="candidate.email"
+          [matTooltip]="translate.get('copyToClipboard') | async"
+          [matTooltipShowDelay]="500"
+        >
+          <span class="material-icons-outlined md-18"> mail </span>
+        </a>
+      </li>
+      <li class="candidate-contact__phone">
+        <span>{{ candidate.phone }}</span>
+        <a
+          role="button"
+          [rsmCopyToClipboard]="candidate.phone"
+          [matTooltip]="translate.get('copyToClipboard') | async"
+          [matTooltipShowDelay]="500"
+        >
+          <span class="material-icons-outlined md-18"> phone_iphone </span>
+        </a>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+<!-- /contact-information -->
+
+<!-- work-experience -->
+<mat-card class="work-experience__container mat-elevation-z0">
+  <mat-card-title>
+    <h2 class="text-upper" translate>workExperience</h2>
+  </mat-card-title>
+  <mat-card-content>
+    <div
+      *ngFor="let workplace of workplaces"
+      fxLayout="row"
+      fxLayoutGap="0.5rem"
+      class="workplace__list"
+    >
+      <ul fxFlex="25%" class="pv-2">
+        <li class="company__name text-upper">{{ workplace.company }}</li>
+        <li class="company__place">
+          {{ workplace.city }}, {{ workplace.state }}
+        </li>
+        <li class="company__period">
+          <ng-container *ngIf="!workplace.endDate; else completePeriod">
+            <span translate>present</span>
+          </ng-container>
+          <ng-template #completePeriod>
+            {{ workplace.startDate | date: "y" }}
+            - {{ workplace.endDate | date: "y" }}
+          </ng-template>
+        </li>
+      </ul>
+      <div fxFlex="5%" fxLayout="column">
+        <span class="separator__bullet"></span>
+        <span class="separator__stick"></span>
+      </div>
+      <div fxFlex="0 1 calc(70% - 1rem)" class="pv-1">
+        <strong class="company__role">{{ workplace.position }}</strong>
+        <p class="company__responsabilities">
+          {{ workplace.activityDescription }}
+        </p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+<!-- /work-experience -->
+
+<!-- education -->
+<mat-card class="education__container mat-elevation-z0">
+  <mat-card-title>
+    <h2 class="text-upper" translate>education</h2>
+  </mat-card-title>
+  <mat-card-content>
+    <div
+      *ngFor="let institution of education"
+      fxLayout="row"
+      fxLayoutGap="0.5rem"
+      class="institution__list"
+    >
+      <ul fxFlex="25%" class="pv-2">
+        <li class="institution__name text-upper">
+          {{ institution.institution }}
+        </li>
+        <li class="institution__place">
+          {{ institution.city }}, {{ institution.state }}
+        </li>
+        <li class="institution__period">
+          <ng-container *ngIf="!institution.endDate; else completePeriod">
+            <span translate>present</span>
+          </ng-container>
+          <ng-template #completePeriod>
+            {{ institution.startDate | date: "y" }}
+            - {{ institution.endDate | date: "y" }}
+          </ng-template>
+        </li>
+      </ul>
+      <div fxFlex="5%" fxLayout="column">
+        <span class="separator__bullet"></span>
+        <span class="separator__stick"></span>
+      </div>
+      <div fxFlex="0 1 calc(70% - 1rem)" class="pv-1">
+        <strong class="institution__role">{{ institution.degree }}</strong>
+        <p class="institution__responsabilities">
+          {{ institution.courseDescription }}
+        </p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+<!-- /education -->
+
+<!-- language -->
+<mat-card class="language__container mat-elevation-z0">
+  <mat-card-title>
+    <h2 class="text-upper" translate>languages</h2>
+  </mat-card-title>
+  <mat-card-content>
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="4rem">
+      <div
+        *ngFor="let language of languages"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        fxLayoutGap=".5rem"
+      >
+        <span class="language__item text-upper">
+          {{ language.language }}
+        </span>
+        <span
+          fxFlexOffset=".75rem"
+          class="material-icons-outlined md-18 text-info"
+          [matTooltip]="
+            (translate.get('readLevel') | async) + ': ' + language.readLevel
+          "
+        >
+          auto_stories
+        </span>
+        <span
+          class="material-icons-outlined md-18 text-info"
+          [matTooltip]="
+            (translate.get('speakLevel') | async) + ': ' + language.speakLevel
+          "
+        >
+          record_voice_over
+        </span>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+<!-- /language -->
+
+<!-- hobbies -->
+<mat-card class="hobbies__container mat-elevation-z0">
+  <mat-card-title>
+    <h2 class="text-upper" translate>hobbies</h2>
+  </mat-card-title>
+  <mat-card-content>
+    <div fxLayout="row" fxLayout="start center" fxLayoutGap="2rem" class="pv-2">
+      <span
+        *ngFor="let activity of translate.get('hobbieActivities') | async"
+        [innerHTML]="activity | safe: 'html'"
+        class="hobbie__item text-upper"
+      >
+      </span>
+    </div>
+  </mat-card-content>
+</mat-card>
+<!-- /hobbies -->

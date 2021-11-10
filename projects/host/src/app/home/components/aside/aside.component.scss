@@ -1,0 +1,60 @@
+@import "variables";
+
+:host {
+  padding: 0.5rem;
+
+  border-bottom: $var-bd-light;
+  background: $var-bg-dark-3;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 100%;
+    height: 100%;
+
+    padding-top: 1rem;
+
+    .avatar__wrapper--rounded {
+      width: 100%;
+      border-radius: 50%;
+      padding: 0.25rem 0;
+
+      .avatar__img--rounded {
+        width: 9.25rem;
+        height: 9.25rem;
+        margin: 0 auto;
+
+        border: 0.275rem solid rgba($color: #efefef, $alpha: 0.25);
+        border-radius: 50%;
+
+        background: #424242 url("../../../../assets/img/avatar-icloud.webp")
+          no-repeat center center;
+        background-size: cover;
+      }
+    }
+
+    .about-me {
+      color: #fff;
+      padding: 0.25rem 1rem;
+
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+        font-family: "Anton", sans-serif;
+        font-size: 24px;
+        line-height: 28px;
+
+        align-self: center;
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+    }
+  }
+}

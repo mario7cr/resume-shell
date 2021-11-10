@@ -1,0 +1,11 @@
+<aside>
+  <div class="avatar__wrapper--rounded">
+    <div class="avatar__img--rounded" aria-details="Candidate avatar"></div>
+  </div>
+  <section class="about-me">
+    <h4 translate>aboutMe</h4>
+    <ng-container *ngFor="let p of translate.get('whoAmI') | async">
+      <p [innerHTML]="p"></p>
+    </ng-container>
+  </section>
+</aside>

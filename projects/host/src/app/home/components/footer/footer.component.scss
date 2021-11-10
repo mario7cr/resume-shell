@@ -1,0 +1,27 @@
+@import "variables";
+
+:host {
+  padding: 0.325rem 1.5rem;
+
+  background: $var-bg-dark-3;
+
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    width: 100%;
+
+    .footer__text--light {
+      color: white;
+    }
+
+    .footer__icon--light {
+      fill: white;
+    }
+
+    .footer__copyrights {
+      font-family: "Bebas Neue", cursive;
+    }
+  }
+}

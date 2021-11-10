@@ -1,0 +1,47 @@
+/*
+ * Backgounds
+ */
+
+$var-bg-light-o1: #ffffff;
+
+$var-bg-light-1: rgba(
+  $color: #ffffff,
+  $alpha: 0.35,
+);
+$var-bg-light-2: rgba(
+  $color: #eeeeee,
+  $alpha: 0.35,
+);
+$var-bg-light-3: rgba(
+  $color: #bcbcbc,
+  $alpha: 0.35,
+);
+
+$var-bg-dark-1: rgba(
+  $color: #6d6d6d,
+  $alpha: 0.85,
+);
+$var-bg-dark-2: rgba(
+  $color: #424242,
+  $alpha: 0.85,
+);
+$var-bg-dark-3: rgba(
+  $color: #1b1b1b,
+  $alpha: 0.85,
+);
+
+/*
+  * Borders
+  */
+
+$var-bd-light: 1px solid
+  rgba(
+    $color: #ffffff,
+    $alpha: 0.25,
+  );
+
+/*
+* Font Colors
+*/
+$var-font-1: #424242;
+$var-font-2: #6d6d6d;

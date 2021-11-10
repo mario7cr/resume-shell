@@ -1,0 +1,81 @@
+{
+  "aboutMe": "About me...",
+  "copyToClipboard": "Copy to clipboard",
+  "education": "Education",
+  "educationalInstitutions": [
+    {
+      "institution": "Catholic University of Santos",
+      "city": "Santos",
+      "state": "SP",
+      "startDate": "2010-02",
+      "endDate": "2013-12",
+      "degree": "Bachelor of Computer Science",
+      "courseDescription": "O principal ensinamento que aprendi com este curso foi entender como algumas características de linguagens modernas funcionam em sua essência. Durante o curso, a linguagem utilizada para ensinamento prático foi a linguagem C que por ser uma linguagem de baixo nível é um pouco mais complexa mas que mostra mais claramente as instruções que você desenvolve."
+    }
+  ],
+  "hobbies": "Hobbies",
+  "hobbieActivities": [
+    "Anime", "K-Drama", "League of Legends <small>(just watch)</small>", "Music", "Cook"
+  ],
+  "knownLanguages": [
+    {
+      "language": "Portuguese",
+      "readLevel": "Native",
+      "speakLevel": "Native"
+    },
+    {
+      "language": "English",
+      "readLevel": "Advanced",
+      "speakLevel": "Intermediate"
+    }
+  ],
+  "languages": "Languages",
+  "present": "Present",
+  "readLevel": "Read level",
+  "sinceFrom": "Since from",
+  "speakLevel": "Speak level",
+  "whoAmI": [
+    "I really admire those who know from an early age what they want to be in the future... although this is not exactly my case.",
+    "I decided for IT due to a simple reason, among the options I had, this was the one that I identified the most. Today I can say that it was one of the best decisions I've ever made, of course, there are some days when I think about dropping everything and living in the field 😅... but I think this is quite normal for those who work with IT.",
+    "In general, I consider myself as a simple person that has already learned lots of things through these years but that still needs to learn much more, I always try to give my best because this is the only way to be proud of what I do.",
+    "Working as a Frontend, I've found it's almost impossible to keep up with all the new features, but I'm used to reading mostly articles from a site called Medium and taking some courses on Youtube or the Udemy platform."
+  ],
+  "workExperience": "Work Experience",
+  "workplaces": [
+    {
+      "company": "Santos Brasil S.A",
+      "city": "Santos",
+      "state": "SP",
+      "position": "Senior Developer",
+      "activityDescription": "Creio ainda estar entendendo qual será as minhas responsabilidades. Até o momentou estou encarregado da gestão de um projeto comercial onde atuo tanto como um intermediário entre o PO da aplicação e o terceiro como também no desenvolvimento das melhorias da aplicação. Paralelo a isso também atuo no desenvolvimento de aplicações do portal restrito aos clientes da empresa.",
+      "startDate": "2021-07"
+    },
+    {
+      "company": "Reply",
+      "city": "São Paulo",
+      "state": "SP",
+      "position": "Frontend",
+      "activityDescription": "Atuando pela Reply tive a oportunidade de fazer parte de uma equipe muito boa, foi a primeira vez que vi a metodologia SCRUM ser aplicada e utilizada de forma eficiente. Também tive a oportunidade de participar do meu primeiro projeto internacional, o aplicativo que estávamos desenvolvendo era voltada para documentação de processos de IOT aplciados em grande escala. Sinto que cresci muito profissionalmente durante o tempo em que fiz parte deste time.",
+      "startDate": "2020-09",
+      "endDate": "2021-07"
+    },
+    {
+      "company": "Keyrus",
+      "city": "São Paulo",
+      "state": "SP",
+      "position": "Frontend",
+      "activityDescription": "Aqui foi onde creio ter superado muitas a minha zona de conforto. Pela Keyrus atuei em diversos clientes, dentre eles AB-Inbev, Honda, Claro, Carrefour... Somente nos clientes em dois destes clientes realmente atuei como Frontend, nos demais acabei axiliando as equipes locadas em outras tecnologias. Creio que meu tempo nesta empresa me fez amadurecer e entender melhor o mundo corporativo.",
+      "startDate": "2019-04",
+      "endDate": "2020-09"
+    },
+    {
+      "company": "Santos Brasil S.A",
+      "city": "Santos",
+      "state": "SP",
+      "position": "Junior Developer",
+      "activityDescription": "Sendo esta a primeira empresa em que atuei, foi de fato onde aprendi muito da base que carrego até hoje. Passando pelas etapas de estágio, técnico até chegar a junior aprendi muito sobre a regra de negócios da empresa e atuei com tecnologias antigas como ASP, VBScript mas também pude trabalhar com PLSSQL, Jquery e com o tempo fui focando mais no desenvolvimento Web.",
+      "startDate": "2011-10",
+      "endDate": "2019-04"
+    }
+  ]
+}
