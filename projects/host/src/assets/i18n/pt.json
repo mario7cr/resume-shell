@@ -10,12 +10,12 @@
       "startDate": "2010-02",
       "endDate": "2013-12",
       "degree": "Bacharel em ciência da computação",
-      "courseDescription": "Creio que o principal ensinamento que pude extrair deste curso foi entender como algumas características de linguagens modernas de alto nível funcionam em sua essência. Durante o curso, a linguagem utilizada para ensinamento prático foi a linguagem C que por ser uma linguagem de baixo nível é um pouco mais complexa mas que mostra mais claramente as instruções que você desenvolve."
+      "courseDescription": "O principal ensinamento que obtive com este curso foi aprender na essência como alguns recursos disponíveis em liguagens modernas de alto nível funcionam. Durante o curso, a linguagem prática utilizada foi a linguagem C que por ser uma linguagem de baixo nível é um pouco mais complexa mas que mostra mais claramente como o seu algoritimo está se comportando."
     }
   ],
   "hobbies": "Passa Tempo",
   "hobbieActivities": [
-    "Anime", "K-Drama", "League of Legends <small>(just watch)</small>", "Music", "Cook"
+    "Anime", "K-Drama", "League of Legends <small style='text-transform: none; padding: 0.25rem; opacity: 0.8;'>(somente assistir)</small>", "Music", "Cook"
   ],
   "knownLanguages": [
     {
@@ -33,6 +33,7 @@
   "present": "Presente",
   "readLevel": "Nível em leitura",
   "sinceFrom": "Desde",
+  "skills": "Habilidades",
   "speakLevel": "Nível em fala",
   "whoAmI": [
     "Eu realmente adimiro aqueles que desde cedo sabem o querem ser no futuro... bem, este não é bem o meu caso.",

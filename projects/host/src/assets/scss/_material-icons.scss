@@ -1,5 +1,9 @@
 .material-icons,
 .material-icons-outlined {
+  &.md-16 {
+    font-size: 16px;
+  }
+
   &.md-18 {
     font-size: 18px;
   }

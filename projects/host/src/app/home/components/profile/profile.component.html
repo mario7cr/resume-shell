@@ -131,14 +131,14 @@
         *ngFor="let language of languages"
         fxLayout="row"
         fxLayoutAlign="start center"
-        fxLayoutGap=".5rem"
+        fxLayoutGap=".75rem"
       >
         <span class="language__item text-upper">
           {{ language.language }}
         </span>
         <span
-          fxFlexOffset=".75rem"
-          class="material-icons-outlined md-18 text-info"
+          fxFlexOffset=".5rem"
+          class="material-icons-outlined md-16 text-info"
           [matTooltip]="
             (translate.get('readLevel') | async) + ': ' + language.readLevel
           "
@@ -146,7 +146,7 @@
           auto_stories
         </span>
         <span
-          class="material-icons-outlined md-18 text-info"
+          class="material-icons-outlined md-16 text-info"
           [matTooltip]="
             (translate.get('speakLevel') | async) + ': ' + language.speakLevel
           "
@@ -176,3 +176,11 @@
   </mat-card-content>
 </mat-card>
 <!-- /hobbies -->
+
+<!-- skills -->
+<mat-card class="skills__container mat-elevation-z0">
+  <mat-card-title>
+    <h2 class="text-upper" translate>skills</h2>
+  </mat-card-title>
+</mat-card>
+<!-- /skills -->
